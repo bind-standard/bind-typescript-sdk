@@ -1,0 +1,7 @@
+src/
+scripts/
+.github/
+biome.json
+tsconfig.json
+.gitignore
+.DS_Store

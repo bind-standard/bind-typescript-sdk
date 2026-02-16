@@ -1,0 +1,58 @@
+{
+  "name": "@bind-standard/sdk",
+  "version": "0.1.0",
+  "repository": "https://github.com/bind-standard/bind-typescript-sdk",
+  "description": "TypeScript SDK for the BIND Standard — types, interfaces, and a typed client for the BIND Terminology Server.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js"
+    },
+    "./terminology": {
+      "types": "./dist/terminology/index.d.ts",
+      "import": "./dist/terminology/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --fix .",
+    "format": "biome format --fix .",
+    "format:check": "biome format .",
+    "check": "biome check .",
+    "check:fix": "biome check --fix .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
+    "sync:types": "tsx scripts/sync-types.ts"
+  },
+  "keywords": [
+    "bind",
+    "insurance",
+    "interoperability",
+    "typescript",
+    "sdk",
+    "terminology"
+  ],
+  "author": "",
+  "license": "CC0-1.0",
+  "packageManager": "pnpm@10.24.0",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.0",
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3"
+  }
+}
