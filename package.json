@@ -1,6 +1,6 @@
 {
   "name": "@bind-standard/sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "https://github.com/bind-standard/bind-typescript-sdk",
   "description": "TypeScript SDK for the BIND Standard — types, interfaces, and a typed client for the BIND Terminology Server.",
   "type": "module",
