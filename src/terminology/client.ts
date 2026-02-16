@@ -28,7 +28,7 @@ export class TerminologyClientError extends Error {
  *
  * @example
  * ```ts
- * import { TerminologyClient } from "@bind-insurance/sdk/terminology";
+ * import { TerminologyClient } from "@bind-standard /sdk/terminology";
  *
  * const client = new TerminologyClient();
  *

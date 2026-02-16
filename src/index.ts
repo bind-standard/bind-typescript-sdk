@@ -1,4 +1,4 @@
-// @bind-insurance/sdk
+// @bind-standard /sdk
 // TypeScript SDK for the BIND Standard — types, interfaces, and terminology client.
 
 export type {

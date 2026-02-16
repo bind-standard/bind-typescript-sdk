@@ -7,7 +7,7 @@ Includes all BIND resource types and a typed client for the [BIND Terminology Se
 ## Install
 
 ```bash
-npm install @bind-insurance/sdk
+npm install @bind-standard /sdk
 ```
 
 ## Types
@@ -15,9 +15,9 @@ npm install @bind-insurance/sdk
 Every BIND resource type is exported as a TypeScript interface:
 
 ```ts
-import type { Policy, Claim, Coverage, Submission, Quote } from "@bind-insurance/sdk";
-import type { Insured, Organization, Person, PersonRole } from "@bind-insurance/sdk";
-import type { Location, Risk, RiskCharacteristic } from "@bind-insurance/sdk";
+import type { Policy, Claim, Coverage, Submission, Quote } from "@bind-standard /sdk";
+import type { Insured, Organization, Person, PersonRole } from "@bind-standard /sdk";
+import type { Location, Risk, RiskCharacteristic } from "@bind-standard /sdk";
 ```
 
 Base data types are also available:
@@ -30,13 +30,13 @@ import type {
   Reference,
   Period,
   Coding,
-} from "@bind-insurance/sdk";
+} from "@bind-standard /sdk";
 ```
 
 You can also import from the `types` subpath if you only need the types:
 
 ```ts
-import type { Policy } from "@bind-insurance/sdk/types";
+import type { Policy } from "@bind-standard /sdk/types";
 ```
 
 ## Terminology Client
@@ -44,7 +44,7 @@ import type { Policy } from "@bind-insurance/sdk/types";
 A zero-dependency, typed HTTP client for the [BIND Terminology Server](https://bind.codes) (280+ insurance code systems):
 
 ```ts
-import { TerminologyClient } from "@bind-insurance/sdk";
+import { TerminologyClient } from "@bind-standard /sdk";
 
 const client = new TerminologyClient();
 
@@ -67,8 +67,8 @@ const french = await client.get("construction-type", { lang: "fr-CA" });
 You can also import from the `terminology` subpath:
 
 ```ts
-import { TerminologyClient } from "@bind-insurance/sdk/terminology";
-import type { CodeSystem, LookupResult } from "@bind-insurance/sdk/terminology";
+import { TerminologyClient } from "@bind-standard /sdk/terminology";
+import type { CodeSystem, LookupResult } from "@bind-standard /sdk/terminology";
 ```
 
 ### Custom Base URL
