@@ -39,6 +39,15 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
+      - name: Clone bind-standard
+        uses: actions/checkout@v4
+        with:
+          repository: bind-standard/bind
+          path: bind-standard
+
+      - name: Sync types from standard
+        run: pnpm run sync:types -- --standard-path ./bind-standard
+
       - name: Typecheck
         run: pnpm run typecheck
 
